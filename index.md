@@ -208,34 +208,29 @@ These functionalities illustrate the concept of smart contracts as autonomous ag
 TrustCoin, leveraging the robust and versatile Ethereum blockchain, is designed to serve multiple purposes across different sectors. Here are the primary use cases, which illustrate the application of TrustCoin in real-world scenarios:
 
 **Decentralized Autonomous Organization (DAO) Governance**
-
     - **Description:** TrustCoin can be utilized within a DAO to facilitate governance and operational decisions. Members can propose, vote on, and implement changes based on collective agreement
     - **Concrete Example:** A DAO that manages a decentralized finance (DeFi) platform uses TrustCoin to let token holders decide on new features or updates. For instance, token holders could vote on integrating a new liquidity pool or adjusting transaction fee structures.
     - **Computer Science Concept:** This use case exemplifies the application of **distributed consensus algorithms** within blockchain technology, ensuring that decisions are made transparently and democratically without a central authority.
     
 **Community Funding and Initiatives**
-
     - **Description:** TrustCoin can be used to fund community projects and initiatives through a transparent, vote-driven process. This ensures that funding is allocated to projects that have community support.
     - **Concrete Example:** A community could vote to allocate funds to support local startups. TrustCoin holders propose different startups, and the community votes to decide which startup will receive the funding.
     - **Computer Science Concept:** Utilizes **smart contracts** for managing and disbursing funds based on predefined conditions met through community voting, showcasing the automation and enforceability of digital contracts.
 
 **Reward and Incentive Systems**
-
     - **Description:** TrustCoin can serve as a medium to reward contributions and incentivize participation in a network, such as content creation, platform engagement, or volunteer activities
     - **Concrete Example:** An online educational platform uses TrustCoin to reward users who contribute high-quality educational content or peer reviews. This incentivizes the production of valuable content and active participation.
     - **Computer Science Concept:** This scenario leverages the concept of **token economics**, where behavioral economics is combined with cryptographic verification to encourage desired behaviors within a digital ecosystem.
 
 **Voting Mechanisms for Corporate Governance**
-
     - **Description:** In a corporate setting, TrustCoin can be integrated into the governance model to enable transparent and secure voting on company decisions, such as mergers, acquisitions, or policy changes.
     - **Concrete Example:** A tech startup uses TrustCoin to allow shareholders to vote on key business decisions, such as CEO selection or strategic shifts. Votes are cast securely and counted transparently via the blockchain.
     - **Computer Science Concept:** Demonstrates the application of **cryptography** to secure voting processes, ensuring that votes are anonymous yet verifiable, preventing fraud while promoting transparency.
 
 **Customizable Delegation for Voting**
-
-- **Description:** TrustCoin holders can delegate their voting rights to other members whom they trust to make informed decisions, enhancing flexibility in participation and decision-making processes
-- **Concrete Example:** An investor with a large stake in TrustCoin delegates their voting rights to a trusted advisor during periods they cannot actively participate. This ensures their influence is maintained by someone aligned with their interests.
-- **Computer Science Concept:** This uses the principle of **delegation in distributed systems**, where trust and authority can be transferred within a network, enhancing efficiency without compromising security or control.
+    - **Description:** TrustCoin holders can delegate their voting rights to other members whom they trust to make informed decisions, enhancing flexibility in participation and decision-making processes
+    - **Concrete Example:** An investor with a large stake in TrustCoin delegates their voting rights to a trusted advisor during periods they cannot actively participate. This ensures their influence is maintained by someone aligned with their interests.
+    - **Computer Science Concept:** This uses the principle of **delegation in distributed systems**, where trust and authority can be transferred within a network, enhancing efficiency without compromising security or control.
 
 ## **Security Features** 
 
@@ -244,7 +239,6 @@ TrustCoin, leveraging the robust and versatile Ethereum blockchain, is designed 
 TrustCoin incorporates a range of security features designed to protect the integrity of transactions and the safety of participants' assets. These features leverage proven computer science theories and security protocols to ensure robust protection against various types of vulnerabilities and attacks.
 
 **Pausable Transactions**
-
     - **Functionality:** TrustCoin integrates the Pausable feature, which allows the contract owner to halt all token transfers in response to a security threat or critical bug discovery.
     - **Concrete Example:** In the event of discovering a vulnerability that could allow unauthorized token minting, the contract can be paused to prevent any further transactions until the vulnerability is patched. This action prevents potential exploitation and secures users' assets against theft.
     - **Computer Science Concept:** This is an application of the **precautionary principle** in system security, where operations can be halted to prevent potential damage while assessing and mitigating risks.
@@ -258,13 +252,11 @@ TrustCoin incorporates a range of security features designed to protect the inte
     - **Computer Science Concept:** The burn mechanism illustrates the **principle of least privilege** by reducing the tokens in circulation, thereby limiting exposure to risk. Fewer tokens in circulation mean fewer assets are at risk of theft or loss.
 
 **Immutable Voting Records**
-
     - **Functionality:** Each vote cast in the governance proposals is recorded on the Ethereum blockchain, ensuring that once votes are submitted, they cannot be altered.
     - **Concrete Example:** When a token holder votes on a proposal, their vote is immutably recorded on the blockchain, preventing any possibility of tampering with the vote after it has been cast
     - **Computer Science Concept:** This feature uses **cryptography** to secure transaction data (votes in this case) on a distributed ledger, which is fundamental to blockchain's trust model—ensuring data integrity and non-repudiation.
 
 **Regular Security Audits and Updates**
-
     - **Functionality:** Commitment to conducting regular audits and updates to the smart contract and its dependencies to identify and remedy vulnerabilities.
     - **Concrete Example:** Before any major update or annually, TrustCoin contracts undergo security audits by reputable third-party security firms. These audits help in identifying vulnerabilities like reentrancy attacks or overflow conditions, which can then be fixed in subsequent updates.
     - **Computer Science Concept:** Regular audits and updates reflect the **iterative security model** where security is continuously improved upon discovering new threats and vulnerabilities, akin to patch management in software security.
