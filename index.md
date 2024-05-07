@@ -75,8 +75,21 @@ TrustCoin is not just a tool for transactional operations; it represents a shift
 - The Ownable contract pattern restricts critical administrative functions (like minting and pausing) to the contract owner, preventing unauthorized access and manipulation.
 **Underlying Computer Science Concepts**
 **Distributed Ledger Technology (DLT):**
+  - TrustCoin leverages Ethereum’s DLT to ensure that all transactions and votes are recorded across multiple nodes, making data alteration or loss virtually impossible without consensus across the network.
+**Cryptography:**
+   - Utilizes cryptographic techniques such as hashing and digital signatures to secure transactions, verify ownership, and ensure the integrity of voting results.
+**Smart Contract and Automata Theory:**
+   - Smart contracts can be viewed as state machines with predefined states and transitions based on inputs (transactions). TrustCoin's contract logic includes states such as paused/unpaused and conditions that dictate state transitions, such as voting thresholds and proposal outcomes.
+**Future Developments and Scalability:**
+   - The project anticipates integration with Layer 2 scaling solutions to improve transaction throughput and reduce costs, enhancing the user experience as Ethereum evolves.
+   - Future revisions might include features like delegated voting, where token holders can assign their voting rights to another party, enriching the governance model.
+##  Features and Functionalities
+**Project Name:**
 ## Setting Up a Wallet
-**Purpose:**  
+**Purpose:** TrustCoin (TCN)
+TrustCoin is engineered to offer a suite of functionalities that enhance usability, governance, and security within the blockchain environment. Each feature is designed to integrate seamlessly with the Ethereum blockchain, leveraging its decentralized architecture and robust security protocols.
+**Minting** The minting process allows the contract owner to create new tokens and distribute them to specific addresses. This is critical for initial distribution, reward systems, or inflationary policies if needed.
+   - **Functionality:**
 A digital wallet is required to interact with the Ethereum network and to manage your TrustCoin tokens.
 
 **Step-by-Step Guide:**
