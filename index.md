@@ -100,7 +100,24 @@ TrustCoin is engineered to offer a suite of functionalities that enhance usabili
    - **Functionality:** This feature gives the contract owner the ability to halt all token transfers in response to a detected anomaly or during an upgrade. This is a critical security feature that can prevent misuse in case of vulnerability detection or during updates.
    - **Concrete Example:** If a vulnerability is detected in the contract or a related dependency, the contract can be paused to prevent any transactions until the issue is resolved, protecting user assets.
    - **Computer Science Concept:** Relates to **Fault Tolerance** in distributed systems, where the system is designed to halt operations safely in an error state to prevent further failures or losses.
-
+**Burning Tokens**
+- **Functionality:**  Users can voluntarily burn their tokens, reducing the total circulating supply, which can potentially increase the value of remaining tokens and is used as a tool for deflationary economic models
+- **Concrete Example:** A user decides to burn 500 TCN to reduce the overall supply, potentially increasing the scarcity and value of the remaining tokens.
+- **Computer Science Concept:** Demonstrates the **Entropy Reduction** principle in system economics, where reducing the number of entities (tokens) can increase the system's order or value.
+**Proposals and Voting**
+   - **Functionality:** Enables token holders to propose changes or new initiatives within the community and vote on them. This democratic approach ensures that changes to the project are made transparently and with community approval.
+   - **Concrete Example:** A proposal could be raised to decide whether TrustCoin should integrate with a new DeFi protocol. Token holders would use their tokens to vote for or against the integration, ensuring that only popular initiatives are adopted.
+   - **Computer Science Concept:** This feature is an application of **Consensus Algorithms** used in blockchain technologies, where multiple parties agree on a single data value, like the outcome of a vote, ensuring consistency and reliability in a decentralized network.
+   - 
+**Security Measures**
+- **Functionality:** Includes advanced security protocols such as role-based access controls and multi-sig requirements for critical operations, enhancing the security and integrity of transactions.
+- **Concrete Example:** Multi-signature verification might be required for executing high-value transactions or changes to key contract parameters, ensuring that no single account can unilaterally make significant modifications.
+- **Computer Science Concept:** Illustrates the principles of **Cryptographic Security and Distributed Trust**, which are fundamental to blockchain's ability to secure transactions and data against tampering and fraud.
+**Future Scalability**
+    - **Functionality:**  The architecture is designed to be scalable, with considerations for future enhancements like layer-two solutions or cross-chain integrations to handle increased load and provide faster transactions at lower costs.
+    - **Concrete Example:** As the TrustCoin user base grows, the project may implement a Plasma chain or state channels to scale the network efficiently, reducing gas costs and improving transaction speeds.
+    - **Computer Science Concept**: This is aligned with **Scalability Solutions** in computer networks, where systems are designed to handle growth efficiently without degradation in performance or security.
+  
 
 
 
