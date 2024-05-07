@@ -1,0 +1,97 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/security/Pausable.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/utils/Counters.sol";
+
+contract TrustCoin is ERC20, Pausable, Ownable {
+    using Counters for Counters.Counter;
+    Counters.Counter private _proposalIds;
+
+    struct Proposal {
+        uint256 id;
+        string description;
+        bool executed;
+        uint256 deadline;
+        uint256 forVotes;
+        uint256 againstVotes;
+        mapping(address => bool) voted;
+    }
+
+    mapping(uint256 => Proposal) public proposals;
+
+    event ProposalCreated(uint256 id, string description, uint256 deadline);
+    event Voted(uint256 id, address voter, bool vote, uint256 weight);
+    event ProposalExecuted(uint256 id, bool result);
+
+    constructor(uint256 initialSupply) ERC20("TrustCoin", "TCN") Ownable(msg.sender) {
+        _mint(msg.sender, initialSupply * (10 ** uint256(decimals())));
+    }
+
+    function createProposal(string memory description, uint256 duration) public onlyOwner {
+        uint256 proposalId = _proposalIds.current();
+        Proposal storage proposal = proposals[proposalId];
+        proposal.id = proposalId;
+        proposal.description = description;
+        proposal.executed = false;
+        proposal.deadline = block.timestamp + duration;
+        proposal.forVotes = 0;
+        proposal.againstVotes = 0;
+        _proposalIds.increment();
+        emit ProposalCreated(proposalId, description, block.timestamp + duration);
+    }
+
+    function vote(uint256 proposalId, bool support) public {
+        require(balanceOf(msg.sender) > 0, "No tokens to vote");
+        Proposal storage proposal = proposals[proposalId];
+        require(block.timestamp <= proposal.deadline, "Voting is closed");
+        require(!proposal.voted[msg.sender], "Already voted");
+
+        uint256 voterBalance = balanceOf(msg.sender);
+        if (support) {
+            proposal.forVotes += voterBalance;
+        } else {
+            proposal.againstVotes += voterBalance;
+        }
+        proposal.voted[msg.sender] = true;
+        emit Voted(proposalId, msg.sender, support, voterBalance);
+    }
+
+    function executeProposal(uint256 proposalId) public onlyOwner {
+        Proposal storage proposal = proposals[proposalId];
+        require(block.timestamp > proposal.deadline, "Voting is not closed yet");
+        require(!proposal.executed, "Proposal already executed");
+
+        proposal.executed = true;
+        bool result = proposal.forVotes > proposal.againstVotes;
+        emit ProposalExecuted(proposalId, result);
+        // Execute proposal actions based on `result` here, if applicable
+    }
+
+    // Function to mint new tokens
+    function mint(address to, uint256 amount) public onlyOwner {
+        _mint(to, amount);
+    }
+
+    function pause() public onlyOwner {
+        _pause();
+    }
+
+    function unpause() public onlyOwner {
+        _unpause();
+    }
+
+    function burn(uint256 amount) public {
+        _burn(msg.sender, amount);
+    }
+
+    function transfer(address to, uint256 amount) public override whenNotPaused returns (bool) {
+        return super.transfer(to, amount);
+    }
+
+    function transferFrom(address from, address to, uint256 amount) public override whenNotPaused returns (bool) {
+        return super.transferFrom(from, to, amount);
+    }
+}
