@@ -242,10 +242,12 @@ TrustCoin incorporates a range of security features designed to protect the inte
     - **Functionality:** TrustCoin integrates the Pausable feature, which allows the contract owner to halt all token transfers in response to a security threat or critical bug discovery.
     - **Concrete Example:** In the event of discovering a vulnerability that could allow unauthorized token minting, the contract can be paused to prevent any further transactions until the vulnerability is patched. This action prevents potential exploitation and secures users' assets against theft.
     - **Computer Science Concept:** This is an application of the **precautionary principle** in system security, where operations can be halted to prevent potential damage while assessing and mitigating risks.
+
 **Role-Based Access Control (RBAC)**
     - **Functionality:** TrustCoin uses Ownable to ensure that sensitive actions like minting new tokens or pausing the contract are restricted to authorized roles.
     - **Concrete Example:** Only the wallet address that deployed the TrustCoin contract, typically the project’s main administrator, has the authority to issue new tokens or initiate a pause on transactions, protecting against unauthorized access and potential internal abuse.
     - **Computer Science Concept:** RBAC is a fundamental security strategy in computer systems that restricts system access to authorized users. This principle helps in minimizing potential damage by limiting the number of users who can perform high-stake operations.
+
 **Burn Mechanism**
     - **Functionality:** Allows users to voluntarily burn their tokens, reducing the total supply and potentially increasing token value, but also serving as a security feature
     - **Concrete Example:** Users can choose to burn tokens to remove them from circulation, which not only helps in controlling inflation but also prevents these tokens from being compromised in the future.
