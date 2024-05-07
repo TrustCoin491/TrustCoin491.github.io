@@ -8,5 +8,6 @@ description: >
   in decision-making through a transparent and secure voting mechanism.
 is_project_page: true
 showdownloads: true
+logo: ./logo.png
 repository_url: https://github.com/TrustCoin491/trustcoin491.github.io
 ---
