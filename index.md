@@ -83,7 +83,8 @@ TrustCoin is not just a tool for transactional operations; it represents a shift
 **Future Developments and Scalability:**
    - The project anticipates integration with Layer 2 scaling solutions to improve transaction throughput and reduce costs, enhancing the user experience as Ethereum evolves.
    - Future revisions might include features like delegated voting, where token holders can assign their voting rights to another party, enriching the governance model.
-##  Features and Functionalities
+
+## Features and Functionalities
 
 **Project Name:** TrustCoin (TCN)
 
