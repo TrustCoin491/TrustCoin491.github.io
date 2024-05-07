@@ -1,3 +1,4 @@
+![TrustCoin Logo](logo.png)
 
 # Welcome to TrustCoin
 
