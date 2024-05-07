@@ -201,31 +201,38 @@ Voting employs transaction-based state transitions on the blockchain, where each
 **Computer Science Concept:**  
 These functionalities illustrate the concept of smart contracts as autonomous agents on the blockchain, where coded conditions directly control the execution of specified actions without needing intermediary oversight.
 
-## Use Cases
+## **Use Cases**
 
 **Project Name:** TrustCoin (TCN)
 
 TrustCoin, leveraging the robust and versatile Ethereum blockchain, is designed to serve multiple purposes across different sectors. Here are the primary use cases, which illustrate the application of TrustCoin in real-world scenarios:
 
 **Decentralized Autonomous Organization (DAO) Governance**
+
     - **Description:** TrustCoin can be utilized within a DAO to facilitate governance and operational decisions. Members can propose, vote on, and implement changes based on collective agreement
     - **Concrete Example:** A DAO that manages a decentralized finance (DeFi) platform uses TrustCoin to let token holders decide on new features or updates. For instance, token holders could vote on integrating a new liquidity pool or adjusting transaction fee structures.
     - **Computer Science Concept:** This use case exemplifies the application of **distributed consensus algorithms** within blockchain technology, ensuring that decisions are made transparently and democratically without a central authority.
     
 **Community Funding and Initiatives**
+
     - **Description:** TrustCoin can be used to fund community projects and initiatives through a transparent, vote-driven process. This ensures that funding is allocated to projects that have community support.
     - **Concrete Example:** A community could vote to allocate funds to support local startups. TrustCoin holders propose different startups, and the community votes to decide which startup will receive the funding.
     - **Computer Science Concept:** Utilizes **smart contracts** for managing and disbursing funds based on predefined conditions met through community voting, showcasing the automation and enforceability of digital contracts.
 
 **Reward and Incentive Systems**
+
     - **Description:** TrustCoin can serve as a medium to reward contributions and incentivize participation in a network, such as content creation, platform engagement, or volunteer activities
     - **Concrete Example:** An online educational platform uses TrustCoin to reward users who contribute high-quality educational content or peer reviews. This incentivizes the production of valuable content and active participation.
     - **Computer Science Concept:** This scenario leverages the concept of **token economics**, where behavioral economics is combined with cryptographic verification to encourage desired behaviors within a digital ecosystem.
+
 **Voting Mechanisms for Corporate Governance**
+
     - **Description:** In a corporate setting, TrustCoin can be integrated into the governance model to enable transparent and secure voting on company decisions, such as mergers, acquisitions, or policy changes.
     - **Concrete Example:** A tech startup uses TrustCoin to allow shareholders to vote on key business decisions, such as CEO selection or strategic shifts. Votes are cast securely and counted transparently via the blockchain.
     - **Computer Science Concept:** Demonstrates the application of **cryptography** to secure voting processes, ensuring that votes are anonymous yet verifiable, preventing fraud while promoting transparency.
+
 **Customizable Delegation for Voting**
+
 - **Description:** TrustCoin holders can delegate their voting rights to other members whom they trust to make informed decisions, enhancing flexibility in participation and decision-making processes
 - **Concrete Example:** An investor with a large stake in TrustCoin delegates their voting rights to a trusted advisor during periods they cannot actively participate. This ensures their influence is maintained by someone aligned with their interests.
 - **Computer Science Concept:** This uses the principle of **delegation in distributed systems**, where trust and authority can be transferred within a network, enhancing efficiency without compromising security or control.
